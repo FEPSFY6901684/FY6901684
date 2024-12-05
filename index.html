@@ -36,6 +36,7 @@
   .containter {
     width: 67%;
     border-right: solid 1px;
+    border-left: solid 1px;
     border-color: #000000;
     background-color: #fdfaf5;
     padding: 5px;
@@ -101,7 +102,7 @@
     margin-left: 175px;
     margin-top: 20px;
     border: solid 5px;
-    border-color: #000000;
+    border-color: #7592a1;
   }
 
   .caption1 {
@@ -337,20 +338,24 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
  <h4 class="referencelist"> 
 <p>
-    Einstein, A. (1916.) "Relativity: The Special and General Theory." Methuen & Co Ltd, translated by: Lawson, R W. <br>
+    Einstein, A. (1916.) <i>"Relativity: The Special and General Theory."</i> Methuen & Co Ltd, translated by: Lawson, R W. <br>
     <br>
-    Isham, C.J. (1993). "Canonical Quantum Gravity and the problem of Time," In: "Integrable Systems, Quantum Groups, and Quantum Field Theories," pp10. <br>
+    Isham, C.J. (1993). <i>"Canonical Quantum Gravity and the problem of Time,"</i> In: <i>"Integrable Systems, Quantum Groups, and Quantum Field Theories,"</i> pp10. <br>
     <br>
-    Kok, P. (2013). 'The Physics of Time Travel,'' [Recorded Video] University of Sheffield February. Available at: <a href="https://digitalmedia.sheffield.ac.uk/media/The+physics+of+time+travel%2C+by+Dr+Pieter+Kok/0_czvvp2q1" target="_blank">https://digitalmedia.sheffield.ac.uk/media/The+physics+of+time+travel%2C+by+Dr+Pieter+Kok/0_czvvp2q1</a> (Accessed: 31 October) <br>
+    Kok, P. (2013). <i>'The Physics of Time Travel,'</i> [Recorded Video] University of Sheffield February. Available at: <a href="https://digitalmedia.sheffield.ac.uk/media/The+physics+of+time+travel%2C+by+Dr+Pieter+Kok/0_czvvp2q1" target="_blank">https://digitalmedia.sheffield.ac.uk/media/The+physics+of+time+travel%2C+by+Dr+Pieter+Kok/0_czvvp2q1</a> (Accessed: 31 October) <br>
     <br>
-    Newton, I. (1687.) "Philosophiae Naturalis Principia Mathematica." London: Royal Society. <br>
+    Newton, I. (1687.) <i>"Philosophiae Naturalis Principia Mathematica."</i> London: Royal Society. <br>
     <br>
-    Nicholas J.J, S (2024), "Time Travel." Available at: <a href="https://plato.stanford.edu/archives/sum2024/entries/time-travel/" target="_blank">"https://plato.stanford.edu/archives/sum2024/entries/time-travel/"</a> (Accessed: 30 October 2024) <br>
+    Nicholas J.J, S (2024), <i>"Time Travel."</i> Available at: <a href="https://plato.stanford.edu/archives/sum2024/entries/time-travel/" target="_blank">"https://plato.stanford.edu/archives/sum2024/entries/time-travel/"</a> (Accessed: 30 October 2024) <br>
     <br>
-    Novikov, I. D., (1998). "The River of Time." University of Cambridge Press, translated by: Kisin, V. <br>
+    Novikov, I. D., (1998). <i>"The River of Time."</i> University of Cambridge Press, translated by: Kisin, V. <br>
     <br>
-    Smeenk, C and Arntzenius, F and Maudlin, T (2023), "Time Travel and Modern Physics." Available at: <a href="https://plato.stanford.edu/archives/spr2023/entries/time-travel-phys/" target="_blank">https://plato.stanford.edu/archives/spr2023/entries/time-travel-phys/</a> (Accessed: 28 October 2024) <br>
-</h4>
+    Smeenk, C and Arntzenius, F and Maudlin, T (2023), <i>"Time Travel and Modern Physics."</i> Available at: <a href="https://plato.stanford.edu/archives/spr2023/entries/time-travel-phys/" target="_blank">https://plato.stanford.edu/archives/spr2023/entries/time-travel-phys/</a> (Accessed: 28 October 2024) <br>
+    <br>
+    <br>
+    Figure 1: <a href="https://byjus.com/physics/grandfather-paradox/" target="_blank">https://byjus.com/physics/grandfather-paradox/ </a> 
+
+  </h4>
 </p>
 
 <br>
@@ -359,9 +364,9 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 </div>
 
 </body>
+<br>
 
-
-<div id="last-updated">Loading last update time...</div>
+<div id="last-updated">Loading last update time...</div> <br>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; padding: 8px 16px;">
     Verify Last Modified Time
@@ -435,8 +440,14 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
     const PSCount = displayWordCount("PS_InText");
     const PS2Count = displayWordCount("PS2_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
+
+    const AbstractTCount = displayWordCount("AbstractTitle");
+    const IntroductionTCount = displayWordCount("IntroductionTitle");
+    const TATTCount = displayWordCount("TATTitle");
+    const OFMCTCount = displayWordCount("OFMCTitle");
+    const ConclusionTCount = displayWordCount("ConclusionTitle");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount;
+    const totalWordCount = AbstractCount + IntroductionCount + TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount + AbstractTCount + IntroductionTCount + TATTCount + OFMCTCount + ConclusionTCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     
