@@ -428,15 +428,15 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
     const AbstractCount = displayWordCount("Abstract_InText");
+    const IntroductionCount = displayWordCount("Introduction_InText");
     const TATCount = displayWordCount("TAT_InText");
     const OFMCCount = displayTotalWordCount("OFMC_InText");
     const PSCount = displayTotalWordCount("PS_InText");
     const PS2Count = displayTotalWordCount("PS2_InText");
     const ConclusionCount = displayTotalWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AbstractCount + TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount;
+    const totalWordCount = AbstractCount + IntroductionCount + TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     
