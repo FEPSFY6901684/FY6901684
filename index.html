@@ -117,10 +117,10 @@
 <div class="containter">
 
 <heading>
-<h3><b><u> Abstract </u></b></h3>
+<h3 id = "AbstractTitle"><b><u> Abstract </u></b></h3>
 </heading>
 <h4 class="abstract1"> 
-<p></p>
+<p id="Abstract_InText">
 This article discusses the topic of time travel: its perception throughout history, and plausibility in theoretical physics. 'Time' has evolved past its previous interpretation as fixed and absolute in Newtonian physics to potentially existing as a 4th dimension 
 with the Einstein's theories of relativity. While it is mathematically possible given some models of how our universe works, ignoring the 
 technological limitations, time travel raises logical inconsistencies that could limit its realistic plausibility; exemplified most by, "The Grandfather Paradox,"
@@ -135,8 +135,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
 <div class="baseline">
 
-<h3 class="headings1"><b>  1. Introduction </b></h3>
-<p>
+<h3  id = "IntroductionTitle" class="headings1"><b>  1. Introduction </b></h3>
+<p id="Introduction_InText">
  Time travel; the hypothetical activity of traversing into the past or future. 
  It is a concept that has entertained the minds of both scientists and non-scientists alike. 
  As our understanding of technology advances, the notion of time travel grows increasingly attractive. 
@@ -149,8 +149,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
 <br>
 
-<h3 class="headings1"><b>  2. Time Across Time </b></h3>
- <p>
+<h3  id = "TATTitle" class="headings1"><b>  2. Time Across Time </b></h3>
+<p id="TAT_InText">
  The concept of 'time' was considered to be absolute and universal; based off our understanding of Newtonian/ classical mechanics, time was constant and 
  flowed equally everywhere <span class="citations">(Newton, 1687, Scholium to the Definitions)</span>. Newton's work stood on firm foundations for a long time, his laws accurately describing 
  our universe for what was visible; however, as the field evolved, the scale (both micro, and macro) of our observational capability increased 
@@ -161,8 +161,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
 <br>
 
-<h3 class="headings1"><b>  3. One of Many Challenges </b></h3>
-<p>
+<h3  id = "OFMCTitle" class="headings1"><b>  3. One of Many Challenges </b></h3>
+<p id="OFMC_InText"></p>
   Theoretically possible, and realistically possible are extremely black and white; if humanity were to somehow overcome the technological limitations of time travel, 
   core principles of physics would have to be challenged. While paradoxes tend to border between the brinks of philosophy and science, 
   if the structure of CTCs are mathematically possible, and to be taken seriously, inconsistencies that arise from their existence require solutions. 
@@ -183,8 +183,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
  
 <div class="baseline">
 
-<h3 class="headings1"><b>  4. Possible Solutions </b></h3>
- <p>
+<h3  id = "PSTitle" class="headings1"><b>  4. Possible Solutions </b></h3>
+ <p id="PS_InText">
   <p><b>4.1. Novikov Self-Consistency Principle:</b></p>
   Internal contradictions, like the one depicted within these paradoxes, render many to deem time travel to be a logical impossibility; 
   however, such a conclusion would logically invalidate Einstein's theory of general relativity too. Influencing one's past influences their future as well; 
@@ -194,11 +194,11 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
   or to any "change" to the past whatsoever, then the probability of that event is zero.'</i> - that in some inexplicable way, 
   the time traveller will have failed to alter the past's events. This way, the principle remains self-servient, actions becoming part of history all along, as a result, 
   it uses predestination to avoid paradoxical alteration.  
-  </p>
+ </p>
 
  <br>
 
- <p>
+ <p id="PS2_InText">>
   <p><b>4.2. Many Worlds Interpretation:</b></p>
   Another possible resolution is a subvariant of 'Hugh Everett's,' 'Many-Worlds Interpretation,' (MWI); touching into the world of quantum mechanics, 
   the MWI describes a time traveller arriving in a different universe from whence they came at that point in time. 
@@ -211,8 +211,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
 <br> 
 
-<h3 class="headings1"><b>  5. Conclusion </b></h3>
- <p>
+<h3  id = "ConclusionTitle" class="headings1"><b>  5. Conclusion </b></h3>
+ <p id="Conclusion_InText">
   This remains one of the fields most elusive problems awaiting to be solved; the theories of which best describes our universe require unification as the concept of 
   time-travel may be possible within the realm of relativity but is still not strictly prohibited by our current knowledge of quantum mechanics <span class="citations">(Isham, C.J.)</span>.
   Current theories lawfully permitting time travel are still just theories; and for a topic as abstract as 'time travel,' rigorously testing for proof remains 
@@ -431,9 +431,14 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract_InText");
+    const TATCount = displayWordCount("TAT_inText");
+    const OFMCCount = displayTotalWordCount("OMFC_inText");
+    const PSCount = displayTotalWordCount("PS_inText");
+    const PS2Count = displayTotalWordCount("PS2_inText");
+    const ConclusionCount = displayTotalWordCount("Conclusion_inText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AbstractCount + TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
