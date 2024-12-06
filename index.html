@@ -156,9 +156,9 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 <p id="TAT_InText">
  The concept of 'time' was considered to be absolute and universal; based off our understanding of Newtonian/ classical mechanics, time was constant and 
  flowed equally everywhere <span class="citations">(Newton, 1687, Scholium to the Definitions)</span>. Newton's work stood on firm foundations for a long time, his laws accurately describing 
- our universe for what was visible; however, as the field evolved, the scale (both micro, and macro) of our observational capability increased 
+ our universe for what was visible; however, as the field evolved, the scale of our observational capability increased 
  as well - observations that raised discrepancies in Newtonian mechanics. Our theory has limitations. Anomalies improperly explained by Newton's theory, 
- such as the orbit of mercury, an anomaly that served as motivation for cue: Albert Einstein - renown as, not just physics', but one of history's most laureate minds, 
+ such as the orbit of mercury, an anomaly that served as motivation for Albert Einstein - renown as one of history's most laureate minds, 
  and soon-forth the development of general relativity. Along with that, the idea of 'spacetime' and 'closed timelike curves' (CTCs) was born <span class="citations">(Einstein, 1916).</span>
 </p>
 
@@ -178,7 +178,7 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 
  <figure>
  <img src = "Grandfather Paradox.png" width = "750" height = "384" class="margining"> 
- <figcaption class="caption1"> <i> "Figure 1: A visual representation of the 'Grandfather Paradox.' 			          (see reference list for link)" </i> </figcaption>
+ <figcaption id = "figureCaption" class="caption1"> <i> "Figure 1: A visual representation of the 'Grandfather Paradox." </i> </figcaption>
  </figure>
  
  <br>
@@ -196,7 +196,7 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
   in the mid 1980s. Intended to resolve paradoxes in time travel, Novikov's <span class="citations">(1998, ch.6)</span> conjecture expresses: <i>'if an event exists that would give rise to a paradox, 
   or to any "change" to the past whatsoever, then the probability of that event is zero.'</i> - that in some inexplicable way, 
   the time traveller will have failed to alter the past's events. This way, the principle remains self-servient, actions becoming part of history all along, as a result, 
-  it uses predestination to avoid paradoxical alteration.  
+  it uses predestination to avoid paradoxes.  
  </p>
 
  <br>
@@ -208,8 +208,8 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
   Every possible action suspended in a state of superposition, only converging upon certainty in order to maintain a consistent timeline; 
   actions that diverge cause a 'split' in that timeline, creating its own mutually exclusive universe <span class="citations">(Kok, 2013)</span>. 
   Surface-level criticism to this explanation has arisen as this would not constitute as 'real time travel' since the paradox is only avoided due to it 'technically'
-  not having happened in the first place <span class="citations">(Smeenk et al., 2023)</span>. While not being the film-quality form of time travel as desired, the MWI does provide a plausible, 
-  logical reasoning to avoid the 'Grandfather Paradox,' altering the past may be unfeasible; but silver lining: you still time travelled.  
+  not having happened in the first place <span class="citations">(Smeenk et al., 2023)</span>. While not being the form of time travel as desired, the MWI does provide 
+  logical reasoning to avoid the 'Grandfather Paradox,' altering the past may be unfeasible; but you still time travelled.  
  </p>
 
 <br> 
@@ -273,7 +273,7 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
 </style>
 
 <table id="test">
-  <caption class="style1"> <i> "A rapid-fire table surmising other paradoxical limitations due to time travel." </i> </caption>
+  <caption id = "tableCaption" class="style1"> <i> "A rapid-fire table describing other time travel paradoxes." </i> </caption>
     <tr>
       <th>Paradox</th>
       <th>Description</th>
@@ -290,14 +290,14 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
       <td>This raises questions in if 'fate' is real. The time traveller could never have gone back in time without the 'disater' happening and the 'disaster' could not have happened if the time traveler never went back.</td>
     </tr>
     <tr>
-      <td>The Fermi Paradox (but for time travel!)</td>
+      <td>The Fermi Paradox (time travel edition!)</td>
       <td>If time travel is possible, why have we not encountered any travellers from the future already?</td>
       <td>A simple question, and one with many answers. Time travel could just be impossible, any attempts to time travel was met with resistance too great, a higher dimensional lifeform stops us. And more.</td>
     </tr>
     <tr>
       <td>The Double Occupancy Paradox</td>
       <td>You arrive in the time same point in time as another version of yourself where you both physically exist simultaneously.</td>
-      <td>Thinking about this deeper, not only would your physical-continuity be in question, but universal laws such as conservation of mass and energy. There cannot suddenly be <i>more</i> in the universe? Right? </td>
+      <td>Thinking about this deeper, not only would your physical-continuity be in question, but universal laws such as conservation of mass and energy. Can there suddenly be <i>more</i> in the universe? </td>
     </tr>
   </table>
 
@@ -436,9 +436,11 @@ Hugh Everet's, "Many Worlds Interpretation," this article can help serve as an i
     const OFMCTCount = displayWordCount("OFMCTitle");
     const ConclusionTCount = displayWordCount("ConclusionTitle");
     const TableTCount = displayWordCount("TableTitle");
-    const testCount = displayWordCount("test")
+    const testCount = displayWordCount("test");
+    const capCount1 = displayWordCount("figureCaption");
+    const capCount2 = displayWordCount("tableCaption");
     // Calculate the sum of all selected sections
-    const totalWordCount =  TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount + testCount + TATTCount + OFMCTCount + ConclusionTCount + TableTCount;
+    const totalWordCount =  TATCount + OFMCCount + PSCount + PS2Count + ConclusionCount + testCount + TATTCount + OFMCTCount + ConclusionTCount + TableTCount + capCount1 + capCount2;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     
